@@ -133,7 +133,7 @@ mainMenu:
     contests:
         contest_01_03062020:
             title: "콘테스트 #01"
-            desc: Win <strong>$25</strong> for the coolest base!
+            desc: 최고의 기지에게 상금 <strong>$25</strong>!
             longDesc: >-
                 여러분들에게 무언가를 나눠드리고 싶어서 주간 콘테스트를 개최합니다!
 
@@ -153,9 +153,9 @@ mainMenu:
 
         showInfo: 보기
         contestOver: 이 콘테스트는 끝났습니다. 디스코드에서 새로운 콘테스트 관련 알림을 받으세요!
-    continue: Continue
-    newGame: New Game
-    madeBy: Made by <author-link>
+    continue: 이어하기
+    newGame: 새 게임
+    madeBy: <author-link>에 의해 생성
 
 dialogs:
     buttons:
@@ -238,9 +238,9 @@ dialogs:
             당신은 많은 건물을 삭제하려고 하고있습니다! (정확히는 <count>개) 삭제하시겠습니까?
 
     massCutConfirm:
-        title: Confirm cut
+        title: 잘라내기 확인
         desc: >-
-            You are cutting a lot of buildings (<count> to be exact)! Are you sure you want to do this?
+            당신은 많은 건물을 잘라내기하려 하고있습니다! (정확히는 <count>개)! 정말 잘라내시겠습니까?
 
     blueprintsNotUnlocked:
         title: 아직 사용 불가
@@ -264,10 +264,9 @@ dialogs:
         desc: 데모 버전에서는 마커를 2개 까지만 놓을 수 있습니다. 유료 버전을 구입하면 마커를 무제한으로 놓을 수 있습니다!
 
     exportScreenshotWarning:
-        title: Export screenshot
+        title: 스크린샷 출력
         desc: >-
-            You requested to export your base as a screenshot. Please note that this can
-            be quite slow for a big base and even crash your game!
+            기지의 스크린샷을 출력 요청받았습니다. 이 과정은 기지가 클경우 매우 느려지거나 게임이 튕길 수 있습니다.
 
 ingame:
     # This is shown in the top left corner and displays useful keybindings in
@@ -284,8 +283,8 @@ ingame:
         placeBuilding: 건물 놓기
         createMarker: 마커 놓기
         delete: 삭제
-        pasteLastBlueprint: Paste last blueprint
-        lockBeltDirection: Enable belt planner
+        pasteLastBlueprint: 마지막 청사진 붙여넣기
+        lockBeltDirection: 벨트 계획 활성화
         plannerSwitchSide: Flip planner side
 
     # Everything related to placing buildings (I.e. as soon as you selected a building
@@ -325,7 +324,7 @@ ingame:
     # Mass select information, this is when you hold CTRL and then drag with your mouse
     # to select multiple buildings
     massSelect:
-        infoText: Press <keyCut> to cut, <keyCopy> to copy, <keyDelete> to remove and <keyCancel> to cancel.
+        infoText: <keyCut>로 잘라내고, <keyCopy>로 복사하고, <keyDelete>로 삭제하며 <keyCancel>로 취소합니다.
 
     # The "Upgrades" window
     shop:
@@ -338,7 +337,7 @@ ingame:
         # The roman number for each tier
         tierLabels: [I, II, III, IV, V, VI, VII, VIII, IX, X]
 
-        maximumLevel: MAXIMUM LEVEL (Speed x<currentMult>)
+        maximumLevel: 최대 레벨 (속도 x<currentMult>)
 
     # The "Statistics" window
     statistics:
@@ -385,7 +384,7 @@ ingame:
         waypoints: 마커
         hub: 중앙 건물
         description: 마커를 좌클릭해서 그곳으로 가고, 우클릭해서 삭제합니다.<br><br><keybinding>을 눌러 지금 있는 곳에 마커를 놓거나 <strong>우클릭해서</strong> 원하는 곳에 놓으세요.
-        creationSuccessNotification: Marker has been created.
+        creationSuccessNotification: 마커가 생성되었습니다.
 
     # Interactive tutorial
     interactiveTutorial:
@@ -517,7 +516,7 @@ storyRewards:
 
     reward_painter:
         title: 색칠기
-        desc: >-
+        desc: -
             <strong>색칠기</strong>가 잠금 해제 되었습니다! 색소 광물을 추출해서 이 기계로 도형을 색칠하세요. <br><br>PS: 당신이 색맹이라면, 해결책을 찾고 있으니 잠시만 기다려주세요!
 
     reward_mixer:
@@ -723,16 +722,16 @@ keybindings:
 
         toggleHud: UI보기/숨기기
         toggleFPSInfo: FPS 와 디버그 보기/숨기기
-        belt: *belt
-        splitter: *splitter
-        underground_belt: *underground_belt
-        miner: *miner
-        cutter: *cutter
-        rotater: *rotater
-        stacker: *stacker
-        mixer: *mixer
-        painter: *painter
-        trash: *trash
+        belt: 운반벨트
+        splitter: 분배기
+        underground_belt: 지하 운반벨트
+        miner: 채굴기
+        cutter: 절단기
+        rotater: 회전장치
+        stacker: 접합기
+        mixer: 색상조합기
+        painter: 도색장치
+        trash: 쓰레기통
 
         abortBuildingPlacement: 건물 배치 취소
         rotateWhilePlacing: 회전
@@ -740,41 +739,41 @@ keybindings:
             Modifier: 대신 반시계방향으로 회전
         cycleBuildingVariants: 변형종 사용
         confirmMassDelete: 대량 삭제 확인
-        pasteLastBlueprint: Paste last blueprint
+        pasteLastBlueprint: 마지막 청사진 붙여넣기
         cycleBuildings: 건물 사이클
 
         massSelectStart: 누르고 드래그해서 시작
         massSelectSelectMultiple: 여러 곳 선택
         massSelectCopy: 영역 복사
-        massSelectCut: Cut area
+        massSelectCut: 영역 잘라내기
 
         placementDisableAutoOrientation: 자동 회전 끄기
         placeMultiple: 배치 모드에 있기
         placeInverse: 자동 벨트 회전 뒤집기
-        exportScreenshot: Export whole Base as Image
-        mapMoveFaster: Move Faster
-        lockBeltDirection: Enable belt planner
+        exportScreenshot: 전체 기지를 이미지로 출력
+        mapMoveFaster: 이동 가속
+        lockBeltDirection: 벨트 설계 활성화
         switchDirectionLockSide: 'Planner: Switch side'
 
 about:
     title: 이 게임의 정보
     body: >-
-        This game is open source and developed by <a href="https://github.com/tobspr"
-        target="_blank">Tobias Springer</a> (this is me).<br><br>
+        이 게임은 오픈소스이며 <a href="https://github.com/tobspr"
+        target="_blank">Tobias Springer</a>에 의해 개발되었습니다 (이게 접니다).<br><br>
 
-        If you want to contribute, check out <a href="<githublink>"
-        target="_blank">shapez.io on github</a>.<br><br>
+        만약 당신이 개발에 기여하고 싶다면 <a href="<githublink>"
+        target="_blank">shapez.io on github</a>를 체크아웃 하세요.<br><br>
 
-        This game wouldn't have been possible without the great discord community
-        around my games - You should really join the <a href="<discordlink>"
+        이 게임은 훌륭한 디스코드 커뮤니티가 없었다면 불가능했을 것 입니다.
+        - 당신이 이곳에 참가했으면 좋겠어요. <a href="<discordlink>"
         target="_blank">discord server</a>!<br><br>
 
-        The soundtrack was made by <a href="https://soundcloud.com/pettersumelius"
-        target="_blank">Peppsen</a> - He's awesome.<br><br>
+        사운드 트랙은  <a href="https://soundcloud.com/pettersumelius"
+        target="_blank">Peppsen</a>이 만들어 주었습니다. - 끝내주는 사람이에요.<br><br>
 
-        Finally, huge thanks to my best friend <a
-        href="https://github.com/niklas-dahl" target="_blank">Niklas</a> - Without our
-        factorio sessions this game would never have existed.
+        마지막으로 내 절친에게 최고의 감사를 표합니다.<a
+        href="https://github.com/niklas-dahl" target="_blank">Niklas</a> - 펙토리오 세션이 없었다면
+        이 게임은 절대 출시될 수 없었을거야.
 
 changelog:
     title: 업데이트 기록
@@ -785,6 +784,6 @@ demo:
         importingGames: 게임 저장 파일 불러오기
         oneGameLimit: 게임 저장 파일 최대 1개
         customizeKeybindings: 키바인딩 설정하기
-        exportingBase: Exporting whole Base as Image
+        exportingBase: 전체 기지 이미지로 출력
 
     settingNotAvailable: 데모 버전에서 사용 불가
